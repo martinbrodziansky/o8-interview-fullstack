@@ -14,11 +14,12 @@ Create a simple to-do list application (shown on home screen) according to follo
 ### Technical criteria:
 
 - A to-do is a simple object having a numerical id, a message and a boolean indicator of whether or not it is completed.
-- Create REST API for the purposes of this assignment with following endpoints:
+- Create REST API (add TodosController) for the purposes of this assignment with following endpoints:
   - GET /todos
   - POST /todos
   - PUT /todos/{id}
   - DELETE /todos/{id}
+- There is no need to save the data to a database, you can keep the data in memory
 - Fetch the data from this API and store them in a Vuex module. Communicate with the API using Vuex actions, manage CRUD on the API and local state (filtering, sorting) in Vuex.
 - Make sure you use separate components where appropriate, instead of creating one big component handling all of the logic. Reusability is key.
 - If there are no to-dos to be shown, display a message saying so; when a button is unclickable (e.g. you can't undo an action of it is futher than 5 away), make it visually clear.
